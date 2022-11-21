@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+display: grid;
+width: 80vw;
+margin: 50px auto;
+/* border: 2px solid black; */
+grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+gap: 30px;
+ grid-auto-rows: 250px;
+}
+
+nav{
+width: 80vw;
+padding-left: 145px;
+}
+
+div{
+border-radius: 8px;
+position: relative;
+}
+
+div img{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    transition: 300ms;
+}
+
+div:hover img{
+     opacity: 0.25;
+     cursor: pointer;
+     filter: grayscale(80%);
+}
+
+h1{
+    background-color: lightblue;
+    color: aliceblue;
+    padding: 10px;
+    padding-top: 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* width: 75vw; */
+
+}
+
+nav ul{
+    list-style: none;
+    background-color: lightgreen ;
+}
+
+ul li{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 40px;
+    padding: 5px;
+}
+li a{
+    text-decoration: none;
+    color: lightseagreen;
+}
+ div i{
+    /* ye sb photo icon ko cnetre m laane k liye */
+    position: absolute;       
+    top: 45%;
+    left: 45%;
+    font-size: 30px;
+    z-index: 2;
+    transform: scale(0) ;
+    transition: 200ms;
+ }
+
+ div:hover i{
+    /* for camera icon pop up*/
+    transform: scale(2);
+}
+
+li:nth-of-type(1){
+    margin-right: 600px;
+}
+ 
